@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolor"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/headerlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/taxchat_topnavigation_new" />
+
+            <ImageView
+                android:id="@+id/profileclick"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/navigator1"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homescreencolor"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_toRightOf="@+id/taxsavplanneriv"
+            android:fontFamily="sans-serif"
+            android:text="Welcome To TaxChat"
+            android:textColor="@color/textcolordark"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/taxsavplanneriv"
+            android:fontFamily="sans-serif"
+            android:text="New way of filling your tax return"
+            android:textColor="@color/textcolordark"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/efileclick"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/on_pressed_bg"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/efileiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/efilebychat_new" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@+id/efileiv"
+                    android:fontFamily="sans-serif"
+                    android:text="e-File By Chat"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_chat_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/notification_bg"
+                    android:fontFamily="sans-serif"
+                    android:minHeight="5dp"
+                    android:minWidth="5dp"
+                    android:padding="5dp"
+                    android:text=" 1 "
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/efile_last_seen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txt_chat_count"
+                    android:layout_marginTop="-7dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:text=" 8:30 AM"
+                    android:textColor="@color/common_action_bar_splitter"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividercolornew"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/taxcalculatorclick"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/on_pressed_bg"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/taxcaliv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/taxcalculator_new" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@+id/taxcaliv"
+                    android:fontFamily="sans-serif"
+                    android:text="Tax Calculator"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_cal_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/notification_bg"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:text=" 1 "
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txt_cal_count"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:text=" 11:30 AM"
+                    android:textColor="@color/common_action_bar_splitter"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/taxsavingtrackerclick"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/on_pressed_bg"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/taxsavplanneriv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/taxplanner_new" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@+id/taxsavplanneriv"
+                    android:fontFamily="sans-serif"
+                    android:text="Tax Saving Planner"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_plan_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/notification_bg"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:text=" 1 "
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txt_plan_count"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:text=" 5:30 PM"
+                    android:textColor="@color/common_action_bar_splitter"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/myaccountclick"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/on_pressed_bg"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/myacciv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/myaccount_new" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@+id/myacciv"
+                    android:fontFamily="sans-serif"
+                    android:text="My Account"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_acc_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/notification_bg"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:text=" 1 "
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:text=" 2:05 PM"
+                    android:textColor="@color/common_action_bar_splitter"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/taxsavplanneriv"
+            android:fontFamily="sans-serif"
+            android:text="&#169; H&amp;R Block (India) Private Limited. All Rights Reserved."
+            android:textColor="@color/textcolorfullfaint"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>

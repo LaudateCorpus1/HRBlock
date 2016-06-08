@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/toolbarcolor">
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/toolbarcolor">
+        <ImageView
+            android:id="@+id/crossclick"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:src="@drawable/crosspopup"
+            android:layout_marginTop="5dp"
+
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Children's Tuition Fees"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+
+            android:textColor="@color/textcolorfaint"
+            android:fontFamily="sans-serif-medium"
+            />
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/one"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="5dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/textcolorfaint"
+                android:fontFamily="sans-serif"
+                android:text="Deduction for tuition fees paid can be claimed for up to two children for educational institutions situated only in India."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/textcolorfaint"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="5dp"
+                android:text="In case, you have more than two children, your spouse has a separate individual limit of two children. The deduction is available only for the tuition fee paid. It cannot be claimed for expenses like donations, library fees, exam fees etc."/>
+
+
+<!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/textcolorfaint"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="5dp"
+                android:text="The deduction is available only for the tuition fee paid. It cannot be claimed for expenses like donations, library fees, exam fees, etc."/>
+-->
+
+
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>

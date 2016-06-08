@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ChatFile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="splash_screen_text">This is Splash Screen</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="welcome_title">Welcome to Chatfile</string>
+    <string name="welcome_sub_title">Filing a return is as easy as chatting</string>
+    <string name="login_inst">Login to proceed</string>
+    <string name="email_hint">Enter email Id</string>
+    <string name="password_hint">Enter password</string>
+    <string name="login_text">Login</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="cancel">Cancel</string>
+    <!-- Tabs -->
+    <string name="tab1">Personal Info</string>
+    <string name="tab2">Address</string>
+    <string name="tab3">More Info</string>
+    <string name="tab4">Income</string>
+    <string name="tab5">Deductions</string>
+    <string name="tab6">Bank Details</string>
+    <string name="tab7">E-File</string>
+    <string name="report_ext">This is what you provided, you can always scroll up and edit.</string>
+    <string name="help_text">Need Help? Call us on - Call us on 022-30038136 for FREE technical help. (Monday to Friday 10AM to 7PM)</string>
+    <string name="efile_error_text">It seems you have additional taxes payable. Kindly check your deductions properly. In case you still have taxes payable, we will be unable to proceed with filing of your tax return. Kindly login to www.hrblock.in to continue with your tax filing. Rest assured that data you keyed in here will be available in your account at https://tax.hrblock.in</string>
+
+    <string-array name="menu_items">
+        <item>Save Progress</item>
+        <item>Logout</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_height"
+    android:background="#FFF"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/chatfilelogo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainHelp"
+        android:layout_width="@dimen/titlebar_height"
+        android:layout_height="@dimen/titlebar_height"
+        android:layout_gravity="center_vertical"
+        android:padding="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle" />
+
+        <TextView
+            android:id="@+id/mainHelpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="\?"
+            android:textColor="#7DC243"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/titlebar_height"
+        android:layout_height="@dimen/titlebar_height"
+        android:layout_gravity="center_vertical"
+        android:padding="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle" />
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0%"
+            android:textColor="#7DC243"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/menu_options"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/navigator1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"/>
+    <!-- android:background="@drawable/menu_more_selector" -->
+
+</LinearLayout>

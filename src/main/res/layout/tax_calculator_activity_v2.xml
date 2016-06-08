@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolor"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/headerlogo"
+                android:layout_width="30dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="30dp"
+                android:src="@drawable/taxcalculator"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Tax Calculator"
+                android:textSize="20sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/headerlogo"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+               >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif"
+                    android:text="Financial Year"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/et_financial"
+                        android:inputType="number"
+                        android:text="2015-16"
+                        android:textSize="16sp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/edit_bg"/>
+
+                    <!--
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_below="@id/et_financial"
+                                            android:layout_height="0.1dp"
+                                            android:background="#B6B6B6">
+
+                                        </View>
+                    -->
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+               >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif"
+                    android:text="Age"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/et_age"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:hint="Years"
+                        android:maxLength="3"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_age"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6">
+
+                    </View>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/taxablesalary"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Taxable Salary "
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/quetaxablesalary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(?)"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/greencolor"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r1"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_taxsal"
+                        android:layout_toRightOf="@id/r1"
+                        android:maxLength="9"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+
+                        android:textColor="@color/textcolorfaint"
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_taxsal"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6"></View>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+              >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/anyotherincome"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Any Other Income "
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/queanyotherincome"
+                        android:layout_toRightOf="@id/anyotherincome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(?)"
+                        android:textSize="16sp"
+                        android:textColor="@color/greencolor"/>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r2"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_anyotherincome"
+                        android:layout_toRightOf="@id/r2"
+                        android:maxLength="9"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+
+                        android:textColor="@color/textcolorfaint"
+
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_anyotherincome"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6"></View>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif"
+                    android:text="Housing Loan Interest"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r3"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/et_housingloan"
+                        android:inputType="number"
+                        android:layout_toRightOf="@id/r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@color/textcolorfaint"
+                        android:maxLength="7"
+                        android:textSize="16sp"
+
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_housingloan"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6">
+
+                    </View>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif"
+                    android:text="Tax Saving Investments (80C)"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r4"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/et_eightyc"
+                        android:inputType="number"
+                        android:layout_toRightOf="@id/r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@color/textcolorfaint"
+                        android:maxLength="6"
+                        android:textSize="16sp"
+
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_eightyc"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6">
+
+                    </View>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+               >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif"
+                    android:text="Medical Insurance Premium Paid (80D)"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/r5"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/et_eightyd"
+                        android:inputType="number"
+                        android:layout_toRightOf="@id/r5"
+                        android:textColor="@color/textcolorfaint"
+                        android:maxLength="5"
+                        android:textSize="16sp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_eightyd"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6">
+
+                    </View>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/anyother"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Any Other Deductions "
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/queanyother"
+                        android:layout_toRightOf="@id/anyother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(?)"
+                        android:textSize="16sp"
+                        android:textColor="@color/greencolor"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r6"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_anyotherdeduction"
+                        android:layout_toRightOf="@id/r6"
+                        android:maxLength="6"
+                        android:textSize="16sp"
+
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/textcolorfaint"
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_anyotherdeduction"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6"></View>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/calculate_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Calculate My Taxes"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/greencolor"/>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

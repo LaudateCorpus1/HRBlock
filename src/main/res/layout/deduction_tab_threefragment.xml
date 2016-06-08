@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/housingloanclick"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/housingiv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/housingloan"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Housing Loan"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/housingiv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrowsidegreen"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/medicalinsuranceclick"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/medicaliv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/eightyd"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Insurance (80D)"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/medicaliv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrowsidegreen"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+
+        <LinearLayout
+            android:id="@+id/educationloanclick"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/education"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/eightye"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Education Loan (80E)"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/education"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrowsidegreen"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividercolornew"></View>
+
+
+
+        <LinearLayout
+            android:id="@+id/donationclick"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/donationiv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/eightyg"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Donation (80G)"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/donationiv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrowsidegreen"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/otherdeductionrowclick"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/otherdeiv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/otherdeduction"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Deductions"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/otherdeiv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrowsidegreen"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

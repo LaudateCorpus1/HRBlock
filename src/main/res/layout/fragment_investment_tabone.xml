@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/screenlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/recommendationlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolorfaint"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginRight="15dp"
+                android:text="Our Recommendation"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/recommendationtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolorfaint"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:text=""/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/hlprowclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:gravity="center">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/hlpiv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/hlp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Housing Loan Prepayment"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/hlpiv"
+                    android:layout_toLeftOf="@+id/hlparrowdown"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/hlparrowdown"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_action_grren_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/hlphidepannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prepay your housing loan if:"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1)  "
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+
+
+                  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your interest outgo for financial year is exceeding ₹200,000 or"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2) "
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+<!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You want additional tax benefits over and above your tax saving investments (80C)."
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You want to exhaust your 80C limit and maximize your tax benefits."
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/dividercolornew"></View>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ppfrowclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/ppfiv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ppf"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Public Provident Fund"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/ppfiv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_action_grren_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/ppfhidepannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This is a 15 year account with an attractive interest rate of 8.7%. The interest accrued on PPF account is exempt from tax. "
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contribute to your PPF account if:"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1)  "
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You want to safeguard your retirement planning with guaranteed returns or"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2) "
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You want flexibility for your periodic investments."
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+
+                    </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/dividercolornew"></View>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sssrowclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/sssiv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/sukanyasmarudhi"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sukanya Samrudhi Scheme"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/sssiv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_action_grren_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/ssspannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1) "
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If your long term investment goal is to meet higher education and marriage expenses of your daughter, this scheme is a good investment option."
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2) "
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can open the account in the name of your daughter any time before she attains the age of 10 years."
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3) "
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This is a 21 year account with an attractive interest rate of 9.2% p.a."
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+             </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4) "
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deposits can be made till the completion of 14 years and partial withdrawals are allowed only after your daughter attains 18 years of age."
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:paddingBottom="10dp"/>
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/dividercolornew"></View>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/vpfrowclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/vpf1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/vpf"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voluntary Provident Fund"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/vpf1"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_action_grren_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/vpfhidepannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VPF is the additional contribution to your existing PF account. The rate of interest for VPF is 8.75% p.a."
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can consider voluntarily contributing to your provident fund if:"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1) "
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You want guaranteed returns from your monthly investments and"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2) "
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You have a long term investment horizon."
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+                    </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/dividercolornew"></View>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/elssrowclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/elssiv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/elss"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Equity Linked Savings Scheme"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/elssiv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_action_grren_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/elsshidepannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ELSS (Equity Linked Savings Scheme) is a diversified equity fund with a lock-in period of 3 years."
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can consider investing in ELSS if:"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1) "
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You have an appetite for high risk high return and"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+             </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2) "
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You want a relatively shorter lock-in period."
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+             </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/dividercolornew"></View>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/avenuerowclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/avenueiv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/avenue"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Avenues"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/avenueiv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_action_grren_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/avenueshidepannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:focusable="true"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="There are other investment avenues such as 5 year tax saving fixed deposits, post office time deposits, national savings certificates, life insurance policies, etc.  Evaluate these options with the help of an expert financial advisor before you make investments in these products."
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textcolorfaint"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/dividercolornew"></View>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/npsrowclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/npsiv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/nps"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="National Pension Scheme"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/npsiv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_action_grren_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/npspannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+<!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1) "
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You can invest an additional amount of upto ₹50,000 in National Pension Scheme apart from the tax saving investment done under 80C."
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolorfaint"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+       </LinearLayout>
+
+
+
+
+
+        <!--
+                <Button
+                    android:id="@+id/done_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/screenlinear"
+
+                    android:text="Done"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:background="@color/greencolor"/>
+        -->
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</LinearLayout>
+
+
+</RelativeLayout>

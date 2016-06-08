@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/hrarowclick"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/hraiv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/hra"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="House Rent Allowance"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@+id/hraiv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrowsidegreen"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/ltarowclick"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/ltaiv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/lta"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leave Travel Allowance"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@+id/ltaiv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrowsidegreen"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/medicalrowclick"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/meriv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/medical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Reimbursement"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@+id/meriv"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrowsidegreen"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividercolornew"></View>
+
+        <LinearLayout
+            android:id="@+id/otherrowclick"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/otherall"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/others"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Allowances"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@+id/otherall"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrowsidegreen"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

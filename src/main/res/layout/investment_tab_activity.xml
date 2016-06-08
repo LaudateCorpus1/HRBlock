@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolor"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/headerlogo"
+                android:layout_width="30dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="30dp"
+                android:src="@drawable/investment"/>
+
+            <TextView
+                android:id="@+id/toolbartv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Investments"
+                android:textSize="20sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/headerlogo"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.aexonic.hnrblock.SlidingTabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolor"
+        android:theme="@style/MyTheme">
+        </com.aexonic.hnrblock.SlidingTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+
+</LinearLayout>

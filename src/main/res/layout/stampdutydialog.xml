@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/toolbarcolor">
+
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/toolbarcolor">
+
+        <ImageView
+            android:id="@+id/crossclick"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:src="@drawable/crosspopup"
+            android:layout_marginTop="5dp"
+
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stamp Duty &amp; Registration Fees"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+           android:layout_toLeftOf="@id/crossclick"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/textcolorfaint"
+            android:fontFamily="sans-serif-medium"
+            />
+
+    </RelativeLayout>
+<!--
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/greencolor"/>
+-->
+
+    <TextView
+        android:layout_below="@id/one"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/textcolorfaint"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="5dp"
+        android:text="Stamp duty &amp; registration fees paid during the financial year for the purchase of a house are eligible for deduction under section 80C of the Income Tax Act."/>
+
+<!--
+    <TextView
+        android:id="@+id/Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_gravity="right"
+        android:textSize="18sp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/greencolor"
+        android:fontFamily="sans-serif-medium"
+        />
+-->
+</RelativeLayout>
+
+
+</RelativeLayout>

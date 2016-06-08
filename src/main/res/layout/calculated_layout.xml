@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolor"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/headerlogo"
+                android:layout_width="30dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="30dp"
+                android:src="@drawable/taxcalculator"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Tax Calculator"
+                android:textSize="20sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/headerlogo"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_height="wrap_content"
+                android:text="Net Taxable Income"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/r1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="₹"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_nettaxableincome"
+                    android:layout_toRightOf="@id/r1"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="0"
+                    android:background="@drawable/edit_bg"/>
+
+<!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/et_nettaxableincome"
+                    android:layout_height="0.1dp"
+                    android:background="#B6B6B6"></View>
+-->
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_height="wrap_content"
+                android:text="Basic Tax"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/r2"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="₹"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_basictax"
+                    android:layout_toRightOf="@id/r2"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="0"
+
+                    android:background="@drawable/edit_bg"/>
+
+<!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/et_basictax"
+                    android:layout_height="0.1dp"
+                    android:background="#B6B6B6"></View>
+-->
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_height="wrap_content"
+                android:text="Education Cess"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/r3"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="₹"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_educationcess"
+                    android:layout_toRightOf="@id/r3"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="0"
+
+                    android:background="@drawable/edit_bg"/>
+
+<!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/et_educationcess"
+                    android:layout_height="0.1dp"
+                    android:background="#B6B6B6"></View>
+-->
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_height="wrap_content"
+                android:text="Surcharge"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/r4"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="₹"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_surcharge"
+                    android:layout_toRightOf="@id/r4"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="0"
+
+                    android:background="@drawable/edit_bg"/>
+
+<!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/et_educationcess"
+                    android:layout_height="0.1dp"
+                    android:background="#B6B6B6"></View>
+-->
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@id/sss"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#B6B6B6"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_height="wrap_content"
+                android:text="Total Taxes"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/r5"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="₹"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_totaltaxes"
+                    android:layout_toRightOf="@id/r5"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="0"
+
+                    android:background="@drawable/edit_bg"/>
+
+<!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/et_educationcess"
+                    android:layout_height="0.1dp"
+                    android:background="#B6B6B6"></View>
+-->
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/done_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@color/greencolor"/>
+
+    </LinearLayout>
+
+<!--
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/greencolor"/>
+-->
+
+</RelativeLayout>

@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolor"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/headerlogo"
+                android:layout_width="30dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="30dp"
+                android:src="@drawable/investment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Investments"
+                android:textSize="20sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/headerlogo"/>
+        </RelativeLayout>
+
+   </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/portion1"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center">
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/roundedcornerpb"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="20dp"
+                android:indeterminate="false"
+                app:rcBackgroundColor="#d9d9d9"
+                app:rcMax="100"
+                app:rcRadius="0dp"
+                app:rcProgressColor="@color/greencolor"
+                />
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:text="0%"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="@color/textcolorfaint"
+            android:layout_marginTop="5dp"/>
+-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+
+            <TextView
+                android:id="@+id/rupees1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total ₹"
+                android:textColor="@color/textcolorfaint"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rupees1"
+                android:text="0"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/greencolor"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/rupees2"
+                android:layout_toRightOf="@id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="of ₹ 1,50,000 invested"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/textcolorfaint"
+
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_below="@id/portion1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:text="Enter your current investments below:"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_height="wrap_content"
+                    android:text="PF deducted from salary"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/r1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="₹"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <EditText
+                    android:id="@+id/et_pf"
+                    android:layout_toRightOf="@id/r1"
+                    android:maxLength="9"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolorfaint"
+
+                    android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_pf"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6"></View>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:text="Life insurance premium"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r4"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_life"
+                        android:layout_toRightOf="@id/r4"
+                        android:maxLength="9"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/textcolorfaint"
+
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_life"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6"></View>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Housing loan principal"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r3"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_house"
+                        android:layout_toRightOf="@id/r3"
+                        android:maxLength="9"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/textcolorfaint"
+
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_house"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6"></View>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Children's tuition fees"/>
+
+                    <TextView
+                        android:id="@+id/childque"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(?)"
+                        android:textSize="16sp"
+
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/greencolor"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r2"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_ch"
+                        android:layout_toRightOf="@id/r2"
+                        android:maxLength="9"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/textcolorfaint"
+
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_ch"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6"></View>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/stampque"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text=""/>
+
+<!--
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="(?)"
+                        android:textSize="16sp"
+                        android:textColor="@color/greencolor"
+                        />
+-->
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r5"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_stamp"
+                        android:layout_toRightOf="@id/r5"
+                        android:maxLength="9"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/textcolorfaint"
+
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_stamp"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6"></View>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+<!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/nationalque"
+
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+&lt;!&ndash;
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(?)"
+                        android:textSize="16sp"
+
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/greencolor"
+                        />
+&ndash;&gt;
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r6"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_national"
+                        android:layout_toRightOf="@id/r6"
+                        android:maxLength="9"
+                        android:singleLine="true"
+                        android:textColor="@color/textcolorfaint"
+
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_national"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6"></View>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolorfaint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other investments"/>
+
+                    <TextView
+                        android:id="@+id/otherque"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(?)"
+                        android:textSize="16sp"
+
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/greencolor"
+                        />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r7"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_other"
+                        android:layout_toRightOf="@id/r7"
+                        android:maxLength="9"
+                        android:inputType="number"
+                        android:textColor="@color/textcolorfaint"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:singleLine="true"
+                        android:background="@drawable/edit_bg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_other"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6"></View>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="10dp">
+
+<!--
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_height="wrap_content"
+                    android:text="Total investments made"/>
+-->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_height="wrap_content"
+                    android:text="Total (limit ₹1.5 lakh)"/>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/r8"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        android:layout_toRightOf="@id/r8"
+                        android:inputType="number"
+                        android:fontFamily="sans-serif"
+                        android:textSize="20sp"
+                        android:text="0"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/textcolordark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                      />
+
+<!--
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/et_total"
+                        android:layout_height="0.1dp"
+                        android:background="#B6B6B6"></View>
+-->
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/remaininglayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:visibility="gone"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                          <!--  <TextView
+                                android:id="@+id/democlick"
+                                android:layout_width="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:textSize="16sp"
+                                android:textColor="@color/textcolorfaint"
+                                android:layout_height="wrap_content"
+                                android:text="You can invest "/>-->
+
+                            <TextView
+                                android:id="@+id/investtotal"
+                                android:layout_width="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:textSize="16sp"
+                                android:textColor="@color/textcolorfaint"
+                                android:layout_height="wrap_content"
+                                android:text=""/>
+
+<!--
+                            <TextView
+                                android:id="@+id/democlick"
+                                android:layout_width="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:textSize="16sp"
+                                android:textColor="@color/textcolorfaint"
+                                android:layout_height="wrap_content"
+                                android:text=" more to save taxes"/>
+-->
+
+                        </LinearLayout>
+
+<!--
+            <Button
+                android:id="@+id/how_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Where should I invest?"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/greencolor"/>
+-->
+
+
+            <Button
+                android:id="@+id/how_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Where should I invest?"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/greencolor"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

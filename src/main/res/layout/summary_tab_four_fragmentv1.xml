@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:layout_above="@+id/done_btn">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/investmentlogo"
+                    android:layout_width="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="30dp"
+                    android:src="@drawable/investment"/>
+
+                <TextView
+                    android:id="@+id/investmenttv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Investments"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/investmentlogo"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/investmenttv"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="0.1dp"
+                    android:background="#B6B6B6"></View>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/investmenttxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text=""/>
+
+                </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp">
+
+                <ImageView
+                    android:id="@+id/taxlogo"
+                    android:layout_width="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="30dp"
+                    android:src="@drawable/nontaxsalary"/>
+
+                <TextView
+                    android:id="@+id/nontaxtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tax Exemptions"
+                    android:textSize="18sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_toRightOf="@id/taxlogo"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/taxlogo"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="0.1dp"
+                    android:background="#B6B6B6"></View>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/hrahide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Housing Rent Allowance"/>
+
+            <TextView
+                android:id="@+id/housingloantxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text=""/>
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ltahide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Leave Travel Allowance"/>
+
+            <TextView
+                android:id="@+id/leavetraveltxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text=""/>
+         </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Medical Reimbursement"/>
+            <TextView
+                android:id="@+id/medicaltxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text=""/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp">
+
+                <ImageView
+                    android:id="@+id/deductionlogo"
+                    android:layout_width="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="30dp"
+                    android:src="@drawable/otherdeduction"/>
+
+                <TextView
+                    android:id="@+id/deductiontv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Deduction"
+                    android:textSize="18sp"
+                    android:textColor="@color/textcolorfaint"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_toRightOf="@id/deductionlogo"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/deductionlogo"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="0.1dp"
+                    android:background="#B6B6B6"></View>
+
+            </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/housingloanhide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Housing Loan Interest"/>
+
+            <TextView
+                android:id="@+id/housingloaninterenttxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text=""/>
+
+
+<!--
+            <TextView
+                android:id="@+id/housingloaninterenttxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Please add the following sentence after the 1st sentence – This deduction is capped at ₹2,00,000 for self-occupied property."/>
+-->
+
+<!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Deduction is capped at ₹2,00,000 for self-occupied property."/>
+-->
+
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Medical Insurance Premium (80D)"/>
+
+            <TextView
+                android:id="@+id/eightydtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text=""/>
+
+
+            <Button
+                android:id="@+id/email_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Email me this summary"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/greencolor"/>
+
+
+        </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+</RelativeLayout>

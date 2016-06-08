@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolor"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/headerlogo"
+                android:layout_width="30dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="30dp"
+                android:src="@drawable/efile"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-file"
+                android:textSize="20sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/headerlogo"/>
+
+<!--
+            <ImageView
+                android:id="@+id/profileclick"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/profileltoolbarlogo"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+-->
+
+<!--
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:layout_marginRight="15dp"
+                android:background="@color/greencolor"/>
+-->
+
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/upperefileimage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self File Your Return"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100% FREE"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-light"/>
+
+            <Button
+                android:id="@+id/self_file_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="14dp"
+                android:text="Know More"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="14sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:background="@color/greencolor"/>
+
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/lowerefileimage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let Experts File Your Taxes"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="starting @ just Rs. 299"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-light"/>
+
+            <Button
+                android:id="@+id/expert_file_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="14dp"
+                android:text="Know More"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="14sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:background="@color/greencolor"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

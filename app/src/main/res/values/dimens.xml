@@ -1,0 +1,9 @@
+<resources>
+
+    <dimen name="titlebar_height">40dp</dimen>
+    <dimen name="titlebar_height_minus_10">30dp</dimen>
+    <dimen name="messagebar_height">60dp</dimen>
+    <dimen name="input_height">50dp</dimen>
+    <dimen name="input_height_minus_5">40dp</dimen>
+
+</resources>

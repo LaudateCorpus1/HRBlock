@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/toolbarcolor">
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/toolbarcolor">
+
+        <ImageView
+            android:id="@+id/crossclick"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:src="@drawable/crosspopup"
+            android:layout_marginTop="5dp"
+
+            android:layout_alignParentRight="true"
+           />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="National Pension Scheme"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/textcolorfaint"
+            android:fontFamily="sans-serif-medium"
+            />
+
+
+
+    </RelativeLayout>
+<!--
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/one"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/greencolor"/>
+-->
+
+    <LinearLayout
+        android:layout_below="@id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:maxLines="4"
+            android:lines="3"
+            android:textColor="@color/textcolorfaint"
+            android:text="Get additional deduction up to ₹ 50,000 for contribution to National Pension Scheme."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textcolorfaint"
+            android:text="We would recommend you to invest in this if:"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="5dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/textcolorfaint"
+            android:text="1) "/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="14sp"
+                   android:textColor="@color/textcolorfaint"
+                   android:text="You have an appetite for equity market risks linked to your retirement planning and"/>
+
+           </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textcolorfaint"
+            android:text="2) "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textcolorfaint"
+                android:text="You want additional tax benefits over and above your tax saving investments (80C)."/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+<!--
+    <TextView
+        android:id="@+id/Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_gravity="right"
+        android:textSize="18sp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/greencolor"
+        android:fontFamily="sans-serif-medium"
+        />
+-->
+
+</RelativeLayout>
+
+</RelativeLayout>

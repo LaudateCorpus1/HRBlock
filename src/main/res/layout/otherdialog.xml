@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/toolbarcolor">
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/toolbarcolor">
+
+        <ImageView
+            android:id="@+id/crossclick"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:src="@drawable/crosspopup"
+            android:layout_marginTop="5dp"
+
+            android:layout_alignParentRight="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Investments"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+
+            android:textColor="@color/textcolorfaint"
+            android:fontFamily="sans-serif-medium"
+            />
+
+    </RelativeLayout>
+<!--
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="@color/greencolor"/>
+-->
+
+    <LinearLayout
+        android:layout_below="@id/one"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="5dp"
+
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+
+        android:textColor="@color/textcolorfaint"
+        android:text="Enter the amount for investments made under:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textcolorfaint"
+        android:text="1) Contribution to PPF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="3dp"
+
+            android:textColor="@color/textcolorfaint"
+            android:text="2) Voluntary contribution to PF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="3dp"
+
+            android:textColor="@color/textcolorfaint"
+            android:text="3) Equity Linked Savings Scheme (ELSS)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="3dp"
+
+            android:textColor="@color/textcolorfaint"
+            android:text="4) 5 year tax saving fixed deposit"/>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="14sp"
+               android:fontFamily="sans-serif"
+               android:layout_marginTop="3dp"
+               android:textColor="@color/textcolorfaint"
+               android:text="5) "/>
+
+
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/textcolorfaint"
+            android:text="Contribution to Sukanya Samrudhi Scheme"/>
+
+       </LinearLayout>
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="3dp"
+
+            android:textColor="@color/textcolorfaint"
+            android:text="6) Post office time deposit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="3dp"
+
+            android:textColor="@color/textcolorfaint"
+            android:text="7) National Savings Certificates"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="3dp"
+
+            android:textColor="@color/textcolorfaint"
+            android:text="8) Housing loan prepayment etc."/>
+
+    </LinearLayout>
+
+        <!--
+    <TextView
+        android:id="@+id/Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_gravity="right"
+        android:textSize="18sp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/greencolor"
+        android:fontFamily="sans-serif-medium"
+        />
+-->
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

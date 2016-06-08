@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+
+    defaultConfig {
+        //applicationId "com.hnrblock.chatfile"
+        minSdkVersion 11
+        targetSdkVersion 23
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    //compile 'com.android.support:support-v4:22.2.1'
+//    compile files('libs/acra-4.6.2.jar')
+    compile 'ch.acra:acra:4.8.5'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+}

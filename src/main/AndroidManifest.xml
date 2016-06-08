@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aexonic.hnrblock"
+    android:versionCode="9"
+    android:versionName="1.9">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- permission needed to check app state background / foreground -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+
+    <!--
+     IMPORTANT: Change "info.androidhive.parsenotifications.permission.C2D_MESSAGE" in the lines below
+     to match your app's package name + ".permission.C2D_MESSAGE".
+   -->
+    <permission
+        android:name="com.aexonic.hnrblock.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.aexonic.hnrblock.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".ParseHNRApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tax_chat"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme">
+     <!-- <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            >
+            <!--<intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".HomeScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name="com.hnrblock.chatfile.SplashActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.hnrblock.chatfile.ChatActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_chat"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.hnrblock.chatfile.LoginActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+        <service
+            android:name="com.hnrblock.chatfile.helpers.UploadQuestionsService"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name=".ProfileScreenActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomeScreenActivity">
+
+        </activity>
+
+        <activity
+            android:name=".EfileActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomeScreenActivity">
+
+        </activity>
+
+        <activity
+            android:name=".InvestmentScreenActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"
+           >
+
+        </activity>
+
+        <activity
+            android:name=".InvestmentTabActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".InvestmentScreenActivity">
+
+        </activity>
+
+        <activity
+            android:name=".HRAActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".MedicalActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".NonTaxSalaryOther"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".HousingLoanActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".OtherDeductionActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".EducationLoanActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity
+            android:name=".MedicalInsuranceActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity
+            android:name=".DonationActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity
+            android:name=".LTAActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+
+        <activity
+            android:name=".TaxCalculatorActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+
+        <activity
+            android:name=".TaxCalculatorCalculated"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity
+            android:name=".UpdateProfile"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+    <activity android:name="com.soundcloud.android.crop.CropImageActivity"
+        android:screenOrientation="portrait"/>
+
+
+        <!-- Added for Parse push notifications -->
+
+        <service android:name="com.parse.PushService" />
+        <receiver
+            android:name=".CustomPushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "info.androidhive.parsenotifications" to match your app's package name. -->
+                <category android:name="com.aexonic.hnrblock" />
+            </intent-filter>
+        </receiver>
+<!--
+        <meta-data android:name="com.aexonic.hnrblock.notification_icon" android:resource="@drawable/proxbeeicon"/>
+-->
+
+
+        <!--
+                 Optionally, register AnalyticsReceiver and AnalyticsService to support background
+                 dispatching on non-Google Play devices
+               -->
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!--
+             Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+             installation campaign reporting
+        -->
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="34be12c4a15fc8fec082a9fee7d590cc8af13dba" />
+    </application>
+
+</manifest>

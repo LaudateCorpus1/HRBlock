@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/titlebar" />
+
+    <HorizontalScrollView
+        android:id="@+id/tabScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/tabGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:padding="10dp"
+                android:text="@string/tab1" />
+
+            <RadioButton
+                android:id="@+id/tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="10dp"
+                android:text="@string/tab2"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="10dp"
+                android:text="@string/tab3"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/tab4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="10dp"
+                android:text="@string/tab4"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/tab5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="10dp"
+                android:text="@string/tab5"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/tab6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="10dp"
+                android:text="@string/tab6"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/tab7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:padding="10dp"
+                android:text="@string/tab7"
+                android:visibility="gone" />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="-1dp"
+        android:background="#eee" />
+
+    <ListView
+        android:id="@+id/chatView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F4F4F4"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:padding="5dp"></ListView>
+
+    <TextView
+        android:id="@+id/error_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f9b3"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:text="This is texst ;lkasd just testing the stuff"
+        android:textColor="#ff0000"
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#CCC" />
+
+    <LinearLayout
+        android:id="@+id/chat_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/messagebar_height"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <EditText
+            android:id="@+id/chatInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/messagebar_height"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionSend"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2.5dp"
+            android:background="#90CD4C"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="@dimen/input_height_minus_5"
+                android:layout_height="@dimen/input_height_minus_5"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sendarrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:visibility="gone"></GridView>
+
+    <Spinner
+        android:id="@+id/drop_down"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/messagebar_height"
+        android:dropDownVerticalOffset="60dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/yearSpinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/messagebar_height"
+            android:layout_weight="1"
+            android:dropDownVerticalOffset="60dp"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/monthSpinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/messagebar_height"
+            android:layout_weight="1"
+            android:dropDownVerticalOffset="60dp" />
+
+        <Spinner
+            android:id="@+id/dateSpinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/messagebar_height"
+            android:layout_weight="1"
+            android:dropDownVerticalOffset="60dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2.5dp"
+            android:background="#90CD4C"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/dateSendButton"
+                android:layout_width="@dimen/input_height_minus_5"
+                android:layout_height="@dimen/input_height_minus_5"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sendarrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

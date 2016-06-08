@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolor"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/headerlogo"
+                android:layout_width="30dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="30dp"
+                android:src="@drawable/lta"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave Travel Allowance"
+                android:textSize="20sp"
+                android:textColor="@color/textcolorfaint"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/headerlogo"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+<ScrollView
+    android:id="@+id/scrollview"
+    android:layout_below="@id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolorfaint"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Questions"/>
+
+    </LinearLayout>
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+           >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolorfaint"
+            android:textSize="15sp"
+            android:text="1) "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolorfaint"
+                android:textSize="15sp"
+                android:text="Is Leave Travel Allowance (LTA) a part of your salary? "/>
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/id_que1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp">
+
+            <RadioButton
+                android:id="@+id/rbq1yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/apptheme_btn_radio_holo_light"
+                android:text="Yes"
+                android:textColor="@color/textcolorfaint"
+                android:padding="1dp"
+                />
+
+            <RadioButton
+                android:id="@+id/rbq1no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="@color/textcolorfaint"
+
+                android:button="@drawable/apptheme_btn_radio_holo_light"
+                android:layout_marginLeft="40dp"
+                android:padding="1dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/movesection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-sarif-medium"
+                android:textColor="@color/textcolorfaint"
+                android:text="Okay, let's move on to the next section"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondquestionlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolorfaint"
+                android:textSize="15sp"
+
+                android:text="2) "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textcolorfaint"
+                    android:textSize="15sp"
+
+                    android:text="Did you go for a vacation in this financial year?"/>
+
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/id_que2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp">
+
+                <RadioButton
+                    android:id="@+id/rbq2yes"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/apptheme_btn_radio_holo_light"
+                    android:text="Yes"
+                    android:textColor="@color/textcolorfaint"
+
+                    android:padding="1dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbq2no"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/textcolorfaint"
+
+                    android:button="@drawable/apptheme_btn_radio_holo_light"
+                    android:layout_marginLeft="40dp"
+                    android:padding="1dp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/thirdquestionlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolorfaint"
+                android:textSize="15sp"
+
+                android:text="3) "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textcolorfaint"
+                    android:textSize="15sp"
+
+                    android:text="Did you claim the LTA in your last year's tax return?"/>
+
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/id_que3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp">
+
+                <RadioButton
+                    android:id="@+id/rbq3yes"
+                    android:textColor="@color/textcolorfaint"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/apptheme_btn_radio_holo_light"
+                    android:text="Yes"
+                    android:padding="1dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbq3no"
+                    android:textColor="@color/textcolorfaint"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:button="@drawable/apptheme_btn_radio_holo_light"
+                    android:layout_marginLeft="40dp"
+                    android:padding="1dp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/que3movesectionyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+           >
+
+            <TextView
+                android:id="@+id/knowmores1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/textcolorfaint"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/knowmoreclickable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-sarif-medium"
+                android:textColor="@color/greencolor"
+                android:text=""/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/que3movesectionno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/knowmores2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/textcolorfaint"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/knowmoreclickabletwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-sarif-medium"
+                android:textColor="@color/greencolor"
+                android:text=""/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/done_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/greencolor"/>
+
+            <!--
+                    <Button
+                        android:id="@+id/reset_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reset"
+                        android:visibility="gone"
+                        android:textAllCaps="false"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:background="@color/greencolor"/>
+            -->
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

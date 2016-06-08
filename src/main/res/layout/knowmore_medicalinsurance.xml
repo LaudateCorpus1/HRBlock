@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/toolbarcolor">
+
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="15dp"
+        android:background="@color/toolbarcolor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Know more"
+            android:textSize="18sp"
+            android:textColor="@color/textcolorfaint"
+            android:fontFamily="sans-serif-medium"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+
+            android:textColor="@color/textcolorfaint"
+            android:text="You can claim deduction for health insurance premium paid for self,spouse and children is restricted to ₹ 15,000."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+           android:layout_marginTop="10dp"
+            android:textColor="@color/textcolorfaint"
+            android:text="If you have paid the premium for your parents then additional deduction can be claimed up to ₹ 15,000."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textcolorfaint"
+            android:text="The deduction also includes expenses incurred for preventive health check-up upto ₹ 5000."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textcolorfaint"
+            android:text="*for senior citizen the limit is ₹ 20000."/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/crossclick"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/crosspopup"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="34dp"/>
+
+
+</RelativeLayout>
